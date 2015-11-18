@@ -19,7 +19,7 @@ node digitalOceanClient.js
 
 echo "--------------Provisioning a green server on AWS -------------------------------------"
 # node 1
-python awsClient.py
+# python awsClient.py
 
 # Set this flag to false for an uninterrupted ssh
 export ANSIBLE_HOST_KEY_CHECKING=False

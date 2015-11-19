@@ -1,0 +1,9 @@
+cd DevOps_M3
+sudo service redis-server start
+cd redis_app
+npm install
+nodejs main.js &
+cd ..
+cd proxy
+npm install
+nodejs main.js &

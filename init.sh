@@ -3,6 +3,10 @@
 # This script sets up two production servers, one for a blue slice and another for a green slice
 #
 
+# remove any previously existing files
+rm -f inventory
+rm -f inventory_IPs
+
 sudo apt-get install -y python-pip
 pip install -U boto
 
@@ -50,10 +54,6 @@ ssh -t root@$productionServerGreen "chmod +x ~/greenSetup"
 
 #Execute the script
 ssh -t root@$productionServerGreen "~/greenSetup"
-
-# remove any intermediate files
-rm -f inventory
-rm -f inventory_IPs
 
 # Add these bare repos as remote git repos in the project source
 cd $PROJECT_HOME

@@ -1,0 +1,18 @@
+---
+- hosts: Servers
+  tasks:
+  - name: Install node on the production server
+    sudo: true
+    apt: pkg=nodejs state=installed update_cache=true
+
+  - name: Install redis on the production server
+    sudo: true
+    apt: pkg=redis-server state=installed update_cache=true
+
+  - name: Install npm on the production server
+    sudo: true
+    apt: pkg=npm state=installed update_cache=true
+
+  - name: Install git on the production server
+    sudo: true
+    apt: pkg=git state=installed update_cache=true

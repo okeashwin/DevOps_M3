@@ -1,0 +1,2 @@
+[Servers]
+node0 ansible_ssh_host=198.211.104.181 ansible_ssh_user=root ansible_ssh_private_key_file=/home/ashwin_oke/ConfManagementWorkshop/.vagrant/machines/default/virtualbox/private_key

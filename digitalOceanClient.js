@@ -5,7 +5,7 @@ var config = {};
 var args = process.argv;
 var nodeName = args[2];
 
-config.token = "0f1b2054da477bc9e67080cb2e554cb8fb42595da2bbbe99bf9830306ae7c3f9";
+config.token = process.env.DIGITAL_OCEAN_CONFIG;
 
 var headers = {
         'Content-Type':'application/json',

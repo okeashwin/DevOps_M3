@@ -21,6 +21,9 @@
 
 ### Using feature flags to toggle functionality
 ### Monitoring the deployed application on production servers
+* We have used Nagios to achieve this. Using Nagios, we can monitor the host health as well as other services' healths.
+* We configured a Nagios server on `localhost` and this server is configured to monitor the two production servers.
+* Email notifications are used in case any of the services go down in any of the two production servers.
 ### Performing a canary release
 
 ## Screencast

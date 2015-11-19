@@ -30,10 +30,10 @@
 * Email notifications are used in case any of the services go down in any of the two production servers.
 
 ### Performing a canary release
+* Enabling Canary Server: http://localhost:9000/canary?flag=on&ip=127.0.0.1&port=3001&protocol=http&percentage=40
 
 ## Screencast
 * Task 1 : https://youtu.be/X3JRUOGFUkM
 * Task 2 : https://youtu.be/SfpmGDn_8B4
-* Task 3 : https://youtu.be/X3JRUOGFUkM
+* Task 3 and 5 : https://youtu.be/_nOQe9QQBXA
 * Task 4 : https://youtu.be/3Pu2HZ5agJ8
-* Task 5 : https://youtu.be/X3JRUOGFUkM

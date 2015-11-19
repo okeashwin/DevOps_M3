@@ -2,7 +2,7 @@ var redis = require('redis')
 var express = require('express')
 var app = express()
 
-var serverPort = 3000;
+var serverPort = 8090;
 process.argv.forEach(function (val, index, array) {
     if (index == 2) {
         serverPort = parseInt(val);
@@ -11,12 +11,8 @@ process.argv.forEach(function (val, index, array) {
 
 // REDIS
 var client = redis.createClient(6379, '127.0.0.1', {})
-var key = "test1";
-var recentKey = "recent";
-var imagesKey = "images";
 
 app.use(function(req, res, next) {
-    console.log(req.method, req.url);
     next();
 });
 

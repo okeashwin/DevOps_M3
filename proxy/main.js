@@ -13,10 +13,7 @@ process.argv.forEach(function (val, index, array) {
     }
 });
 
-var properties = PropertiesReader('redis.properties');
-var redisHost = properties.get('redis_host');
-var redisPort = properties.get('redis_port');
-var client = redis.createClient(redisPort, redisHost, {})
+var client = redis.createClient(6379, '127.0.0.1', {})
 
 var stableNode;
 client.get("stable_node", function(err, value) {

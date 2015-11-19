@@ -1,10 +1,10 @@
-cd 
+cd /root
 mkdir deploy
 cd deploy
 mkdir green.git
 mkdir green
 cd green.git
 git init --bare
-cd 
-echo 'GIT_WORK_TREE=/deploy/green/ git checkout -f' > /deploy/green.git/hooks/post-receive
-chmod +x /deploy/green.git/hooks/post-receive
+cd /root
+echo 'GIT_WORK_TREE=/root/deploy/green/ git checkout -f' > /root/deploy/green.git/hooks/post-receive
+chmod +x /root/deploy/green.git/hooks/post-receive

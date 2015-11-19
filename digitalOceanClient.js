@@ -2,6 +2,8 @@ var needle = require("needle");
 var os = require("os");
 
 var config = {};
+var args = process.argv;
+var nodeName = args[2];
 
 config.token = "0f1b2054da477bc9e67080cb2e554cb8fb42595da2bbbe99bf9830306ae7c3f9";
 
@@ -67,7 +69,7 @@ client.createDroplet(name, region, image, function(err, response, body)
 		      console.log("Provisioned a server on Digital Ocean with IP :"+dropletIP);
                       fs = require('fs');
                       fs.appendFile('inventory', 
-                                    'node0 ansible_ssh_host='+dropletIP+' ansible_ssh_user=root ansible_ssh_private_key_file=/home/ashwin_oke/ConfManagementWorkshop/.vagrant/machines/default/virtualbox/private_key\n', 
+                                    nodeName+ ' ansible_ssh_host='+dropletIP+' ansible_ssh_user=root ansible_ssh_private_key_file=/home/ashwin_oke/ConfManagementWorkshop/.vagrant/machines/default/virtualbox/private_key\n', 
                                     function (err) {
                         if (err) 
                         {

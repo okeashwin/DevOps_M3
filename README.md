@@ -24,5 +24,5 @@
 ### Performing a canary release
 
 ## Screencast
-* Tasks 1 and 2 :
-* 
+* Task 1 : https://youtu.be/X3JRUOGFUkM
+* Task 2 : https://youtu.be/SfpmGDn_8B4 
